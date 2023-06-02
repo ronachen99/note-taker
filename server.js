@@ -1,21 +1,18 @@
+// Import routes and create an express application
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3001;
 const routes = require('./routes');
 
-// const homeRoutes = require('./routes/homeRoutes')
-// const apiRoutes = require("./routes/api/notes")
+// Set the user environment
+const PORT = process.env.PORT || 3001;
 
-
-// Middleware for parsing JSON and urlencoded form data
+// Middleware for parsing JSON and urlencoded form data, and serve static files
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-// app.use("/", homeRoutes);
-// app.use("/api", apiRoutes);
 app.use(routes);
 
+// Listen for connections
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
-
