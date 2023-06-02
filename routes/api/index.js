@@ -1,6 +1,6 @@
 // Import required dependencies
 const router = require("express").Router()
-const notesRouter = require('./notes');
+const notesRouter = require('./noteRoutes.js');
 
 // Mounting the notesRouter module on the '/notes' path
 router.use('/notes', notesRouter);

@@ -1,7 +1,7 @@
 // Import required dependencies
 const router = require("express").Router()
 const path = require('path');
-
+console.log(path.join(__dirname, '../public/index.html'))
 // Route for the root path ('/')
 router.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '../public/index.html'))
