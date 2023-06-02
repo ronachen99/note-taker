@@ -1,6 +1,6 @@
 // Import required dependencies
 const router = require('express').Router();
-const { readAndAppend, readFromFile, writeToFile} = require('../../helpers/fsUtils');
+const { readAndAppend, readFromFile, writeToFile } = require('../../helpers/fsUtils');
 const { v4: uuidv4 } = require('uuid');
 
 // Route for reading the content and send the response in JSON formatted data
@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     .then((data) => res.json(JSON.parse(data)));
 });
 
-// Route for recieveing a POST request
+// Route for recieveing a POST HTTP request method
 router.post('/', (req, res) => {
   const { title, text } = req.body;
 
@@ -26,9 +26,9 @@ router.post('/', (req, res) => {
   }
 });
 
-// Route for recieving a DELETE request for the selected note from the array
+// Route for recieving a DELETE HTTP request method for the selected note from the array
 router.delete('/:id', (req, res) => {
-  const noteId  = req.params.id;
+  const noteId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
