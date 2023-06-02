@@ -28,18 +28,7 @@ Application Preview:\
 
 ## Installation
 
-Make sure to have Node.js installed on your system.
-
-To install:\
-Please refer to the [Node.js](https://nodejs.org/en/download) site.
-
-<br>
-
-Verify that all the necessary dependencies, packages, or modules are properly installed.
-
-To install:
-1. Right click on the explorer section and select "Open in Integrated Terminal" in VS Code.
-2. Type "npm install" in the terminal.
+There are no installation requirements for this application.
 
 <br>
 
