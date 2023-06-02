@@ -11,6 +11,7 @@ The main objective behind creating this application is to offer users a convenie
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
+  - [Deployed Site](#deployed-site)
 
 <br>
 
@@ -55,3 +56,9 @@ To access the application:
 ## Credits
 
 The application combines express, a node.js web framework, with uuid to generate a unique identifier.
+
+<br>
+
+## Deployed Site
+
+Link to the webpage: https://tuzi-note-taker.herokuapp.com/
