@@ -1,7 +1,5 @@
-// Import router module from Express
+// Import required dependencies
 const router = require("express").Router()
-
-// Import route modules
 const homeRoutes = require('./homeRoutes')
 const apiRoutes = require("./api")
 
